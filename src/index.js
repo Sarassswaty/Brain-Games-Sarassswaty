@@ -1,3 +1,5 @@
 import readlineSync from 'readline-sync';
 
-const actual = readlineSync.question('Your answer: ');
+export const readlineSync = require('readline-sync');
+
+export const userName = readlineSync.question('May I have your name? ');
