@@ -1,5 +1,5 @@
 import readlineSync from 'readline-sync';
 
-export const readlineSync = require('readline-sync');
+const userName = readlineSync.question('May I have your name? ');
 
-export const userName = readlineSync.question('May I have your name? ');
+export default userName;
