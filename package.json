@@ -1,10 +1,11 @@
 {
-  "name": "sar-brain-game",
-  "version": "1.2.2",
+  "name": "alex-brain-game",
+  "version": "1.2.4",
   "description": "hexlet project",
   "main": "index.js",
   "bin": {
-    "brain-games": "dist/bin/brain-games.js"
+    "brain-games": "dist/bin/brain-games.js",
+    "brain-even": "dist/bin/brain-even.js"
   },
   "files": [
     "dist"
@@ -27,7 +28,9 @@
     "@babel/core": "^7.6.2",
     "@babel/node": "^7.6.2",
     "@babel/preset-env": "^7.6.2",
-    "eslint": "^6.5.0",
+    "babel-core": "^7.0.0-bridge.0",
+    "babel-jest": "^23.4.2",
+    "eslint": "^6.5.1",
     "eslint-config-airbnb-base": "^14.0.0",
     "eslint-plugin-babel": "^5.3.0",
     "eslint-plugin-flowtype": "^4.3.0",
@@ -41,12 +44,13 @@
     "jest-cli": "^24.9.0"
   },
   "dependencies": {
+    "@babel/core": "^7.0.0",
     "@babel/plugin-proposal-pipeline-operator": "^7.5.0",
     "babel-eslint": "^10.0.3",
     "build": "^0.1.4",
     "gulp": "^4.0.2",
     "readline-sync": "^1.4.10",
-    "sarassswaty_brain-games": "^1.0.0",
+    "sar-brain-game": "^1.2.2",
     "source-map-support": "^0.5.13"
   }
 }
