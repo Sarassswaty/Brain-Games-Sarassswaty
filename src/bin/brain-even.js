@@ -1,6 +1,5 @@
 #!/usr/bin/env node
 
-import { getRandomNum, askQuestion } from '..';
+import gameStart from '../Module/brain-even';
 
-getRandomNum();
-askQuestion();
+gameStart();

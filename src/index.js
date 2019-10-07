@@ -6,17 +6,22 @@ export const userName = () => {
   return name;
 };
 
-export const getRandomNum = (max) => Math.floor(Math.random() * Math.floor(max));
-const checkEven = (num) => {
-  if (num % 2 === 0) {
-    return 'yes';
+export default (rule, generateQuestion) => {
+  console.log('Welcome to the Brain Games!');
+  console.log(rule);
+  const name = userName();
+  const count = 3;
+  for (let i = 0; i < count; i += 1) {
+    const { question, correctAnswer } = generateQuestion();
+    console.log(question);
+    const answ = readlineSync.question('Your answer: ');
+    if (answ === correctAnswer) {
+      console.log('Correct');
+    } else {
+      console.log(`'${answ}' is wrong answer ;(. Correct answer was '${correctAnswer}'`);
+      return;
+    }
   }
-  return 'no';
-};
 
-export const askQuestion = () => {
-  const num = getRandomNum(101);
-  const correctAnswer = checkEven(num);
-  const question = `Questioin: ${num}`;
-  return { question, correctAnswer };
+  console.log(`Congratulations, ${name}!`);
 };
