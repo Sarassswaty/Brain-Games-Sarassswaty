@@ -1,6 +1,6 @@
 {
-  "name": "s1ar-brain-game",
-  "version": "1.3.4",
+  "name": "sar555-brain-game",
+  "version": "1.3.6",
   "description": "hexlet project",
   "main": "index.js",
   "bin": {
