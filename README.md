@@ -6,5 +6,4 @@
 
 [![Build Status](https://travis-ci.org/Sarassswaty/backend-project-lvl1.svg?branch=master)](https://travis-ci.org/Sarassswaty/backend-project-lvl1)
 
-<a href="https://asciinema.org/a/14?autoplay=1"><img src="https://asciinema.org/a/zlVnMxVRhypQmiZH2WoENjNvJ
-" width="836"/></a>
+<a href="https://asciinema.org/a/zlVnMxVRhypQmiZH2WoENjNvJ" target="_blank"><img src="https://asciinema.org/a/zlVnMxVRhypQmiZH2WoENjNvJ.svg" /></a>
