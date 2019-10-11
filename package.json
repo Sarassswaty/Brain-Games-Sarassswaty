@@ -1,6 +1,6 @@
 {
   "name": "sar-brain-game",
-  "version": "1.3.7",
+  "version": "1.4.12",
   "description": "hexlet project",
   "main": "index.js",
   "bin": {
