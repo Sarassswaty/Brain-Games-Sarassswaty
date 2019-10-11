@@ -6,13 +6,13 @@ export const userName = () => {
   return name;
 };
 
-export default (rule, generateQuestion) => {
+export default (rule, askQuestion) => {
   console.log('Welcome to the Brain Games!');
   console.log(rule);
   const name = userName();
   const count = 3;
   for (let i = 0; i < count; i += 1) {
-    const { question, correctAnswer } = generateQuestion();
+    const { question, correctAnswer } = askQuestion();
     console.log(question);
     const answ = readlineSync.question('Your answer: ');
     if (answ === correctAnswer) {
