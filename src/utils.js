@@ -1,24 +1,17 @@
+
 import readlineSync from 'readline-sync';
 
 export const getRandomNum = (max) => Math.floor(Math.random() * Math.floor(max));
 
 export const characters = ['+', '-', '*'];
 
-export const chooseChar = (char) => {
-  let fn;
+export const chooseChar = (a, b, char) => {
   switch (char) {
-    case '+':
-      fn = (a, b) => a + b;
-      break;
-    case '-':
-      fn = (a, b) => a - b;
-      break;
-    case '*':
-      fn = (a, b) => a * b;
-      break;
-      // no default
+    case '+': return a + b;
+    case '-': return a - b;
+    case '*': return a * b;
+    // no default
   }
-  return fn;
 };
 
 export const userName = () => {
