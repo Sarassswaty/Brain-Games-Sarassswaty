@@ -14,7 +14,9 @@ const isEven = (a, b) => {
 const gameData = () => {
   const a = getRandomNum(101);
   const b = getRandomNum(101);
-
+  const answer = isEven(a, b);
+  const question = `${a} ${b}`;
+  return { answer, question };
 };
 
 export default () => gameStart(gameData, rules);
