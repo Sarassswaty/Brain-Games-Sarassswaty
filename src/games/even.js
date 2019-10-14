@@ -6,12 +6,7 @@ import { getRandomNum } from '../utils';
 
 const rules = 'Answer "yes" if the number is even, otherwise answer "no"';
 
-export const checkEven = (num) => {
-  if (num % 2 === 0) {
-    return 'yes';
-  }
-  return 'no';
-};
+export const checkEven = (num) => num % 2 === 0;
 
 const gameData = () => {
   const question = getRandomNum(1, 100);
