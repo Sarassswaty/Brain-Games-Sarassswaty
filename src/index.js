@@ -1,24 +1,28 @@
 import readlineSync from 'readline-sync';
 
+import { car, cdr } from '@hexlet/pairs';
+
+import { userName } from './utils';
+
 const getUserName = () => {
   console.log('Welcome to the Brain Games!');
   userName();
 };
 
-const gameStart = (GameData, rules) => {
+const gameStart = (gameData, rules) => {
   console.log('Welcome to the Brain Games!');
   console.log(rules);
   const name = userName();
   const count = 3;
   for (let i = 0; i < count; i += 1) {
-    const correctAnswer = checkEven(num);
-    const question = `Question: ${num}`;
+    const correctAnswer = car(gameData());
+    const question = cdr(gameData());
     console.log(question);
-    const answ = readlineSync.question('Your answer: ');
-    if (answ === correctAnswer) {
+    const userAnsw = readlineSync.question('Your answer: ');
+    if (userAnsw === correctAnswer) {
       console.log('Correct');
     } else {
-      console.log(`'${answ}' is wrong answer ;(. Correct answer was '${correctAnswer}'`);
+      console.log(`'${userAnsw}' is wrong answer ;(. Correct answer was '${correctAnswer}'`);
       return;
     }
   }
@@ -26,28 +30,4 @@ const gameStart = (GameData, rules) => {
   console.log(`Congratulations, ${name}!`);
 };
 
-const gameCalc = () => {
-  console.log('Welcome to the Brain Games!');
-  console.log('What is the result of the expression?\n');
-  const name = userName();
-  const count = 3;
-  for (let i = 0; i < count; i += 1) {
-    const char = characters[getRandomNum(3)];
-    const a = getRandomNum(101);
-    const b = getRandomNum(101);
-    const correctAnswer = chooseChar(a, b, char);
-    const question = `Question: ${a} ${char} ${b}`;
-    console.log(question);
-    const answ = readlineSync.question('Your answer: ');
-    if (answ === String(correctAnswer) {
-      console.log('Correct');
-    } else {
-      console.log(`'${answ}' is wrong answer ;(. Correct answer was '${correctAnswer}'. Let's try again, '${name}'!`);
-      return;
-    }
-  }
-
-  console.log(`Congratulations, ${name}!`);
-};
-
-export { getUserName, gameStart, gameCalc };
+export { getUserName, gameStart };
