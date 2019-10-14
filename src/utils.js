@@ -1,4 +1,3 @@
-
 import readlineSync from 'readline-sync';
 
 export const getRandomNum = (max) => Math.floor(Math.random() * Math.floor(max));
