@@ -10,6 +10,7 @@ const isEven = (num) => {
   }
   return 'no';
 };
+
 const gameData = () => {
   const num = getRandomNum(101);
   const answer = isEven(num);
