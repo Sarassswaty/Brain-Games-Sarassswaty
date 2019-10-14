@@ -1,6 +1,6 @@
 import { cons } from '@hexlet/pairs';
 
-import startGame from '..';
+import gameStart from '..';
 
 import { getRandomNum } from '../utils';
 
@@ -20,5 +20,5 @@ const gameData = () => {
 };
 
 export default () => {
-  startGame(gameData, rules);
+  gameStart(gameData, rules);
 };
