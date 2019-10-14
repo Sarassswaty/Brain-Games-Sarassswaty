@@ -44,7 +44,7 @@ const gameCalc = () => {
     const char = characters[getRandomNum(3)];
     const a = getRandomNum(101);
     const b = getRandomNum(101);
-    const correctAnswer = chooseChar(char)(a, b);
+    const correctAnswer = chooseChar(a, b, char);
     const question = `Question: ${a} ${char} ${b}`;
     console.log(question);
     const answ = readlineSync.question('Your answer: ');
