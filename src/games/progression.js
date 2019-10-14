@@ -15,8 +15,9 @@ const isProgression = () => {
 
 
 const gameData = () => {
-  
+  const progression = isProgression(getRandomNum(10));
   const question = `Question: ${num}`;
+  const answer = 
   return { question, answer };
 };
 
