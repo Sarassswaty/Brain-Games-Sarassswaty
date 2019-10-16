@@ -15,10 +15,16 @@ const isProgression = () => {
 
 
 const gameData = () => {
-  const progression = isProgression(getRandomNum(10));
-  const question = `Question: ${num}`;
-  const answer = 
-  return { question, answer };
+  const prog = isProgression(getRandomNum(10));
+  const index = getRandomNum(10);
+  const correctAnswer = prog[index];
+  prog[index] = '..';
+  let strProgr;
+  for (let i = 0; i < prog.length; i += 1) {
+    strProgr += `${prog[i]} `;
+  }
+  const question = `Question: ${strProgr}`;
+  return { question, correctAnswer };
 };
 
 export default () => gameStart(gameData, rules);
