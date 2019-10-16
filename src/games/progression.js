@@ -17,8 +17,8 @@ const isProgression = () => {
 const gameData = () => {
   const prog = isProgression(getRandomNum(10));
   const index = getRandomNum(10);
-  const answer = prog[index];
-  prog[index] = '..';
+  const answer = String(prog[index]);
+  prog[index] = '_';
   let strProgr = '';
   for (let i = 0; i < prog.length; i += 1) {
     strProgr += `${prog[i]} `;
