@@ -19,7 +19,7 @@ const gameData = () => {
   const index = getRandomNum(10);
   const correctAnswer = prog[index];
   prog[index] = '..';
-  let strProgr;
+  let strProgr = '';
   for (let i = 0; i < prog.length; i += 1) {
     strProgr += `${prog[i]} `;
   }
