@@ -2,7 +2,7 @@ import { getRandomNum } from '../utils';
 
 import gameStart from '..';
 
-const rules = 'Answer "yes" if given number is prime. Otherwise answer "no".';
+const getRules = 'Answer "yes" if given number is prime. Otherwise answer "no".';
 
 const isPrime = (n) => {
   if (n === 1) {
@@ -23,4 +23,4 @@ const gameData = () => {
   return { question, answer };
 };
 
-export default () => gameStart(gameData, rules);
+export default () => gameStart(gameData, getRules);

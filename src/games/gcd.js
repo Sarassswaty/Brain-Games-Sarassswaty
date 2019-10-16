@@ -2,7 +2,7 @@ import { getRandomNum } from '../utils';
 
 import gameStart from '..';
 
-const rules = 'Find the greatest common divisor of given numbers.';
+const getRules = 'Find the greatest common divisor of given numbers.';
 
 const isEven = (a, b) => {
   if (b === 0) {
@@ -19,4 +19,4 @@ const gameData = () => {
   return { answer, question };
 };
 
-export default () => gameStart(gameData, rules);
+export default () => gameStart(gameData, getRules);

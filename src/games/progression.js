@@ -2,7 +2,7 @@ import { getRandomNum } from '../utils';
 
 import gameStart from '..';
 
-const rules = 'What number is missing in the progression?';
+const getRules = 'What number is missing in the progression?';
 
 const isProgression = () => {
   const progress = [0];
@@ -27,4 +27,4 @@ const gameData = () => {
   return { question, answer };
 };
 
-export default () => gameStart(gameData, rules);
+export default () => gameStart(gameData, getRules);

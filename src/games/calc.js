@@ -2,7 +2,7 @@ import { getRandomNum } from '../utils';
 
 import gameStart from '..';
 
-const rules = 'What is the result of the expression?';
+const getRules = 'What is the result of the expression?';
 
 const characters = ['+', '-', '*'];
 
@@ -32,4 +32,4 @@ const gameData = () => {
   return { question, answer };
 };
 
-export default () => gameStart(gameData, rules);
+export default () => gameStart(gameData, getRules);
