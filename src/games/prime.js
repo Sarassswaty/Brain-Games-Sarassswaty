@@ -17,7 +17,7 @@ const isPrime = (n) => {
     
 const gameData = () => {
     const num = getRandomNum(101);
-    const answer = isEven(num);
+    const answer = String(isPrime(num));
     const question = `Question: ${num}`;
     return { question, answer };
   };

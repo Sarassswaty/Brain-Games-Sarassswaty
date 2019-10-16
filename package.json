@@ -1,6 +1,6 @@
 {
   "name": "sar-brain-game",
-  "version": "1.9.18",
+  "version": "1.10.18",
   "description": "hexlet project",
   "main": "index.js",
   "bin": {
@@ -53,6 +53,7 @@
     "babel-eslint": "^10.0.3",
     "build": "^0.1.4",
     "eslint-config-airbnb": "^18.0.1",
+    "glob": "^7.1.4",
     "gulp": "^4.0.2",
     "readline-sync": "^1.4.10",
     "source-map-support": "^0.5.13"
