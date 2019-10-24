@@ -1,21 +1,13 @@
 import getRandomNum from '../utils';
 
-import gameStart from '..';
+import startGame from '..';
 
-const getRules = 'Answer "yes" if the number is even, otherwise answer "no"';
-
-const isEven = (num) => {
-  if (num % 2 === 0) {
-    return 'yes';
-  }
-  return 'no';
-};
+const description = 'Answer "yes" if the number is even, otherwise answer "no"';
 
 const gameData = () => {
-  const num = getRandomNum(101);
-  const answer = isEven(num);
-  const question = `Question: ${num}`;
-  return { question, answer };
+  const question = getRandomNum(1, 100);
+  const answer = question % 2 === 0 ? 'yes' : 'no';
+  return [question, answer];
 };
 
-export default () => gameStart(gameData, getRules);
+export default () => startGame(gameData, description);
