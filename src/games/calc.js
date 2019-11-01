@@ -1,8 +1,8 @@
 import getRandomNum from '../utils';
 
-import gameStart from '..';
+import startGame from '..';
 
-const getRules = 'What is the result of the expression?';
+const description = 'What is the result of the expression?';
 
 const characters = ['+', '-', '*'];
 
@@ -24,12 +24,12 @@ const chooseChar = (sign) => {
 };
 
 const gameData = () => {
-  const a = getRandomNum(101);
-  const b = getRandomNum(101);
+  const a = getRandomNum(1, 100);
+  const b = getRandomNum(1, 100);
   const sign = characters[getRandomNum(3)];
   const answer = String(chooseChar(sign)(a, b));
   const question = `${a} ${sign} ${b}`;
-  return { question, answer };
+  return [question, answer];
 };
 
-export default () => gameStart(gameData, getRules);
+export default () => startGame(gameData, description);
