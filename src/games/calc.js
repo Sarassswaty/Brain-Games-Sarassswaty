@@ -4,31 +4,29 @@ import startGame from '..';
 
 const description = 'What is the result of the expression?';
 
-const characters = ['+', '-', '*'];
+const characters = '+-*';
 
-const chooseChar = (sign) => {
-  let fn;
-  switch (sign) {
+const getExpression = (operation, a, b) => {
+  switch (operation) {
     case '+':
-      fn = (a, b) => a + b;
-      break;
+      return a + b;
     case '-':
-      fn = (a, b) => a - b;
-      break;
+      return a - b;
     case '*':
-      fn = (a, b) => a * b;
-      break;
-      // no default
+      return a * b;
+    default:
+      return null;
   }
-  return fn;
 };
 
 const gameData = () => {
-  const a = getRandomNum(1, 100);
-  const b = getRandomNum(1, 100);
-  const sign = characters[getRandomNum(3)];
-  const answer = String(chooseChar(sign)(a, b));
-  const question = `${a} ${sign} ${b}`;
+  const x = getRandomNum(-100, 100);
+  const y = getRandomNum(-100, 100);
+  const sign = characters[getRandomNum(0, characters.length - 1)];
+
+  const question = `${(x)} ${sign} ${(y)}`;
+  const answer = String(getExpression(sign, x, y));
+
   return [question, answer];
 };
 
