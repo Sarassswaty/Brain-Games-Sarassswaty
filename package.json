@@ -4,7 +4,6 @@
   "description": "hexlet project",
   "main": "index.js",
   "bin": {
-    "brain-games": "dist/bin/brain-games.js",
     "brain-even": "dist/bin/brain-even.js",
     "brain-calc": "dist/bin/brain-calc.js",
     "brain-gcd": "dist/bin/brain-gcd.js",
@@ -21,6 +20,11 @@
     "version": "npm run build && git add -A dist",
     "postversion": "git push && git push --tags && rm -rf build/temp"
   },
+  "keywords": [
+    "sarassswaty",
+    "developing skills",
+    "brain games"
+  ],
   "author": "Alex_Vaulina",
   "license": "ISC",
   "repository": {
