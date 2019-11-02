@@ -1,4 +1,4 @@
-# This my project based on Hexlet "Brain-games" and includes:
+# This is my project based on Hexlet "Brain-games" and includes:
 <ul>
  <li>brain-even</li>
  <li>brain-calc</li>
