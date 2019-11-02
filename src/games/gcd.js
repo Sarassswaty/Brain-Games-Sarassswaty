@@ -4,19 +4,19 @@ import startGame from '..';
 
 const description = 'Find the greatest common divisor of given numbers.';
 
-const isGcd = (a, b) => {
+const commonDivisor = (a, b) => {
   if (b === 0) {
-    return Math.abs(a);
+    return a;
   }
-  return isGcd(b, a % b);
+  return commonDivisor(b, a % b);
 };
 
 const gameData = () => {
   const a = getRandomNum(1, 101);
   const b = getRandomNum(1, 101);
-  const answer = String(isGcd(a, b));
+  const answer = String(commonDivisor(a, b));
   const question = `${a} ${b}`;
-  return { answer, question };
+  return [answer, question];
 };
 
 export default () => startGame(gameData, description);
