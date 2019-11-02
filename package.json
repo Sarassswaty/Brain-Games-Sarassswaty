@@ -1,6 +1,6 @@
 {
   "name": "sar-brain-game",
-  "version": "1.10.19",
+  "version": "1.11.20",
   "description": "hexlet project",
   "bin": {
     "brain-even": "dist/bin/brain-even.js",
