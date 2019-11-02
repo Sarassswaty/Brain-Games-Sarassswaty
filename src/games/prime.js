@@ -4,12 +4,11 @@ import startGame from '..';
 
 const description = 'Answer "yes" if given number is prime. Otherwise answer "no".';
 
-const isPrime = (n) => {
-  if (n === 1) {
-    return false;
-  }
-  for (let i = 2; i * i <= n; i += 1) {
-    if (n % i === 0) {
+const isPrime = (num) => {
+  if (num < 2) return false;
+  const halfNum = num / 2;
+  for (let i = 2; i <= halfNum; i += 1) {
+    if (num % i === 0) {
       return false;
     }
   }
