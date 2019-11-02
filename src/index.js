@@ -5,8 +5,8 @@ export default (gameData, description) => {
   console.log(description);
   const userName = readlineSync.question('May i have your name? ');
   console.log(`Hello, ${userName}\n`);
-  const rounds = 3;
-  for (let i = 0; i < rounds; i += 1) {
+  const round = 3;
+  for (let i = 0; i < round; i += 1) {
     const [question, answer] = gameData();
     console.log(question);
     const userAnsw = readlineSync.question('Your answer: ');
