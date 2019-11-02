@@ -1,4 +1,13 @@
-# backend-project-lvl1
+# This my project based on Hexlet "Brain-games" and includes:
+<ul>
+ <li>brain-even</li>
+ <li>brain-calc</li>
+ <li>brain-prime</li>
+ <li>brain-gcd</li>
+ <li>brain-prog</li>
+</ul>
+
+# How to install:
 
 <a href="https://codeclimate.com/github/codeclimate/codeclimate/maintainability"><img src="https://api.codeclimate.com/v1/badges/a99a88d28ad37a79dbf6/maintainability" /></a>
 
