@@ -4,25 +4,21 @@ import startGame from '..';
 
 const description = 'What number is missing in the progression?';
 
-const progressionLength = 10;
-
-const getProgression = (startNumber, step) => {
-  const iter = (arr) => {
-    const len = arr.length;
-    if (len === progressionLength) {
-      return arr;
-    }
-    return iter(arr.concat(arr[len - 1] + step));
-  };
-  return iter([startNumber]);
+const getProgression = (startElement, progressionStep, length) => {
+  const progression = [];
+  for (let i = 0; i < length; i += 1) {
+    progression[i] = startElement + progressionStep * i;
+  }
+  return progression;
 };
 
 const gameData = () => {
-  const startNumber = getRandomNum(1, 50);
-  const step = getRandomNum(1, 10);
-  const hidenItemIndex = getRandomNum(1, 10);
+  const progressionLength = 10;
+  const randomValue = getRandomNum(1, 50);
+  const step = getRandomNum(1, progressionLength);
+  const hidenItemIndex = getRandomNum(1, progressionLength);
 
-  const progression = getProgression(startNumber, step);
+  const progression = getProgression(randomValue, step, progressionLength);
   const answer = `${progression[hidenItemIndex]}`;
   progression[hidenItemIndex] = '..';
   const question = progression.join('  ');
