@@ -19,7 +19,7 @@ const getExpression = (operation, a, b) => {
   }
 };
 
-const gameData = () => {
+const getData = () => {
   const x = getRandomNum(-100, 100);
   const y = getRandomNum(-100, 100);
   const sign = characters[getRandomNum(0, characters.length - 1)];
@@ -30,4 +30,4 @@ const gameData = () => {
   return [question, answer];
 };
 
-export default () => startGame(gameData, description);
+export default () => startGame(getData, description);

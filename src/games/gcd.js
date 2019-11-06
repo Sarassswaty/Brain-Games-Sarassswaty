@@ -11,7 +11,7 @@ const commonDivisor = (a, b) => {
 };
 
 
-const gameData = () => {
+const getData = () => {
   const a = getRandomNum(1, 100);
   const b = getRandomNum(1, 100);
   const question = `${a} ${b}`;
@@ -19,4 +19,4 @@ const gameData = () => {
   return [question, answer];
 };
 
-export default () => startGame(gameData, description);
+export default () => startGame(getData, description);
