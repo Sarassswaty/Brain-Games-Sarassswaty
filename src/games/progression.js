@@ -15,10 +15,10 @@ const getProgression = (startElement, progressionStep, length) => {
 };
 
 const getData = () => {
-  const randomValue = getRandomNum(1, 50);
+  const firstElementProgression = getRandomNum(1, 50);
   const step = getRandomNum(1, progressionLength);
   const hidenItemIndex = getRandomNum(1, progressionLength);
-  const progression = getProgression(randomValue, step, progressionLength);
+  const progression = getProgression(firstElementProgression, step, progressionLength);
   const answer = `${progression[hidenItemIndex]}`;
   progression[hidenItemIndex] = '..';
   const question = progression.join('  ');
