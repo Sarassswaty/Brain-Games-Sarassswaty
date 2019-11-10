@@ -4,6 +4,8 @@ import startGame from '..';
 
 const description = 'What number is missing in the progression?';
 
+const progressionLength = 10;
+
 const getProgression = (startElement, progressionStep, length) => {
   const progression = [];
   for (let i = 0; i < length; i += 1) {
@@ -13,11 +15,9 @@ const getProgression = (startElement, progressionStep, length) => {
 };
 
 const getData = () => {
-  const progressionLength = 10;
   const randomValue = getRandomNum(1, 50);
   const step = getRandomNum(1, progressionLength);
   const hidenItemIndex = getRandomNum(1, progressionLength);
-
   const progression = getProgression(randomValue, step, progressionLength);
   const answer = `${progression[hidenItemIndex]}`;
   progression[hidenItemIndex] = '..';
