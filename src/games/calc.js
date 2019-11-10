@@ -4,7 +4,7 @@ import startGame from '..';
 
 const description = 'What is the result of the expression?';
 
-const characters = '+-*';
+const signs = '+-*';
 
 const getExpression = (operation, a, b) => {
   switch (operation) {
@@ -22,7 +22,7 @@ const getExpression = (operation, a, b) => {
 const getData = () => {
   const x = getRandomNum(-100, 100);
   const y = getRandomNum(-100, 100);
-  const sign = characters[getRandomNum(0, characters.length - 1)];
+  const sign = signs[getRandomNum(0, signs.length - 1)];
 
   const question = `${(x)} ${sign} ${(y)}`;
   const answer = String(getExpression(sign, x, y));
