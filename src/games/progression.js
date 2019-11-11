@@ -19,7 +19,7 @@ const getData = () => {
   const step = getRandomNum(1, progressionLength);
   const hidenItemIndex = getRandomNum(1, progressionLength);
   const progression = getProgression(firstElementProgression, step, progressionLength);
-  const answer = `${progression[hidenItemIndex]}`;
+  const answer = String(progression[hidenItemIndex]);
   progression[hidenItemIndex] = '..';
   const question = progression.join('  ');
   return [question, answer];
