@@ -6,7 +6,7 @@ const description = 'What is the result of the expression?';
 
 const signs = '+-*';
 
-const getExpression = (operation, a, b) => {
+const calculateExpression = (operation, a, b) => {
   switch (operation) {
     case '+':
       return a + b;
@@ -25,7 +25,7 @@ const getData = () => {
   const sign = signs[getRandomNum(0, signs.length - 1)];
 
   const question = `${(x)} ${sign} ${(y)}`;
-  const answer = String(getExpression(sign, x, y));
+  const answer = String(calculateExpression(sign, x, y));
 
   return [question, answer];
 };
