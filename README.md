@@ -1,3 +1,7 @@
+<a href="https://codeclimate.com/github/Sarassswaty/backend-project-lvl1/progress/maintainability"><img src="https://api.codeclimate.com/v1/badges/a99a88d28ad37a79dbf6/maintainability" /></a>
+
+[![Build Status](https://travis-ci.org/Sarassswaty/backend-project-lvl1.svg?branch=master)](https://travis-ci.org/Sarassswaty/backend-project-lvl1)
+
 # This is my project based on Hexlet "Brain-games" and includes:
 <ul>
  <li>brain-even</li>
@@ -6,10 +10,6 @@
  <li>brain-gcd</li>
  <li>brain-prog</li>
 </ul>
-
-<a href="https://codeclimate.com/github/Sarassswaty/backend-project-lvl1/progress/maintainability"><img src="https://api.codeclimate.com/v1/badges/a99a88d28ad37a79dbf6/maintainability" /></a>
-
-[![Build Status](https://travis-ci.org/Sarassswaty/backend-project-lvl1.svg?branch=master)](https://travis-ci.org/Sarassswaty/backend-project-lvl1)
 
 # How to install:
 
